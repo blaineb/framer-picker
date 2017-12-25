@@ -55,3 +55,8 @@ multiPicker.drum0.on "change:currentPage", ->
     print @.value
 ```
 
+Access the toolbar with `multiPicker.toolbar`. To close the picker when tapping "Done":
+```
+multiPicker.toolbar.onTap ->
+	timePicker.stateSwitch "hidden"
+```
